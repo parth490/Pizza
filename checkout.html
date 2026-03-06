@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="cafe">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Cafe - Store</title>
+    <meta name="description" content="cafe">
+    <meta name="keywords" content="cafe">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/main-style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="overlay"></div>
+    <header class="site-header">
+        <div class="announcebar"></div>
+        <div class="main-navigationbar sticky_header" id="header-sticky">
+            <div class="container">
+                <div class="navigationbar-row d-flex align-items-center">
+                    <div class="logo-col">
+                        <h1>
+                            <a href="index.html" tabindex="0">
+                                <img src="assets/images/logo.png" alt="logo" loading="lazy">
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="menu-item-left menu-items-col">
+                        <ul class="main-nav d-flex align-items-center">
+                            <li class="menu-lnk">
+                                <a href="index.html" tabindex="0">Home</a>
+                            </li>
+                            <li class="menu-lnk has-item">
+                                <a href="javascript:;" tabindex="0">Our Menu</a>
+                                <div class="mega-menu menu-dropdown">
+                                    <div class="mega-menu-container container">
+                                        <div class="row">
+                                            <div class="col-xl-2 col-md-3 col-12">
+                                                <ul class="megamenu-list arrow-list">
+                                                    <li class="list-title"><span>Chinese</span></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Hakka Noodles </a></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Manchurian (Veg/Chicken)
+                                                        </a></li>
+                                                    <li><a href="javascript:;" tabindex="0">Schezwan Fried Rice</a></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Schezwan Fried Rice </a>
+                                                    </li>
+                                                    <li><a href="javascript:;" tabindex="0"> Hot & Sour Soup </a></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Chilli Paneer </a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-md-3 col-12">
+                                                <ul class="megamenu-list arrow-list">
+                                                    <li class="list-title"><span>Italian</span></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Margherita Pizza </a></li>
+                                                    <li><a href="javascript:;" tabindex="0"
+                                                            class="d-flex align-items-center">
+                                                            Alfredo Pasta
+                                                            <img src="/assets/images/fire.gif" alt="offer-fire"
+                                                                loading="lazy">
+                                                        </a></li>
+                                                    <li><a href="javascript:;" tabindex="0">Arrabbiata Pasta</a></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Lasagna</a></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Garlic Bread with Cheese
+                                                        </a></li>
+                                                    <li><a href="javascript:;" tabindex="0">Bruschetta </a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-md-3 col-12">
+                                                <ul class="megamenu-list arrow-list">
+                                                    <li class="list-title"><span>Indian</span></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Paneer Butter Masala </a>
+                                                    </li>
+                                                    <li><a href="javascript:;" tabindex="0"
+                                                            class="d-flex align-items-center">
+                                                            Dal Tadka
+                                                            <img src="/assets/images/fire.gif" alt="offer-fire"
+                                                                loading="lazy">
+                                                        </a></li>
+                                                    <li><a href="javascript:;" tabindex="0">Biryani (Veg/Chicken)</a>
+                                                    </li>
+                                                    <li><a href="javascript:;" tabindex="0"> Chole Bhature</a></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Masala Dosa</a></li>
+                                                    <li><a href="javascript:;" tabindex="0">Butter Naan </a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-md-3 col-12">
+                                                <ul class="megamenu-list arrow-list">
+                                                    <li class="list-title"><span>Soup</span></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Tomato Soup </a></li>
+                                                    <li><a href="javascript:;" tabindex="0">Sweet Corn Soup </a></li>
+                                                    <li><a href="javascript:;" tabindex="0">Manchow Soup</a></li>
+                                                    <li><a href="javascript:;" tabindex="0"
+                                                            class="d-flex align-items-center">
+                                                            creamy mushroom
+                                                            <img src="/assets/images/fire.gif" alt="offer-fire"
+                                                                loading="lazy">
+                                                        </a></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Lemon Coriander</a></li>
+                                                    <li><a href="javascript:;" tabindex="0"> mix vegetables </a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-md-3 col-12">
+                                                <ul class="megamenu-list arrow-list">
+                                                    <li class="list-title"><span>Fast-Food</span></li>
+                                                    <li><a href="javascript:;" tabindex="0"> pizza </a></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Veg/Chicken Burger </a>
+                                                    </li>
+                                                    <li><a href="javascript:;" tabindex="0">sandwich</a></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Hot Dog </a></li>
+                                                    <li><a href="javascript:;" tabindex="0">Noodles </a></li>
+                                                    <li><a href="javascript:;" tabindex="0"> dumplings-momos </a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-md-3 col-12">
+                                                <ul class="megamenu-list arrow-list">
+                                                    <li class="list-title"><span>Beverage-drinks</span></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Milkshakes </a></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Cold Drinks </a></li>
+                                                    <li><a href="javascript:;" tabindex="0">Coffee & Tea</a></li>
+                                                    <li><a href="javascript:;" tabindex="0"
+                                                            class="d-flex align-items-center">
+                                                            Mocktails
+                                                            <img src="/assets/images/fire.gif" alt="offer-fire"
+                                                                loading="lazy">
+                                                        </a></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Energy Drinks </a></li>
+                                                    <li><a href="javascript:;" tabindex="0"> Hot Beverages</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-lnk ">
+                                <a href="about-us.html" tabindex="0">About Us</a>
+                            </li>
+                            <li class="menu-lnk">
+                                <a href="contact-us.html" tabindex="0">Contact Us</a>
+                            </li>
+                            <li class="menu-lnk">
+                                <a href="book-table.html" tabindex="0">Book a Table</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <ul class="menu-item-right d-flex align-items-center justify-content-end">
+                        <li class="wishlist-header">
+                            <a href="wishlist.html" tabindex="0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19"
+                                    fill="none">
+                                    <path
+                                        d="M6.31315 0.66797C3.14909 0.66797 0.583984 3.23307 0.583984 6.39714C0.583984 12.1263 7.35482 17.3346 11.0007 18.5461C14.6465 17.3346 21.4173 12.1263 21.4173 6.39714C21.4173 3.23307 18.8522 0.66797 15.6882 0.66797C13.7507 0.66797 12.0371 1.62995 11.0007 3.10234C10.4723 2.34994 9.77042 1.73589 8.95448 1.31215C8.13855 0.888409 7.23255 0.66745 6.31315 0.66797Z"
+                                        fill="#FF9139" />
+                                </svg>
+                                <span class="count">2</span>
+                            </a>
+                        </li>
+                        <li class="cart-header">
+                            <a href="cart.html" class="main-cart flex align-center" tabindex="0">
+                                <div class="cart-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.3056 1.38776C2.4379 2.10859 2.20873 3.32734 1.75144 5.76588L0.970188 9.93255C0.32748 13.3617 0.00664634 15.0763 0.943105 16.2055C1.8806 17.3346 3.62435 17.3346 7.11394 17.3346H12.8848C16.3744 17.3346 18.1181 17.3346 19.0556 16.2055C19.9931 15.0763 19.6702 13.3617 19.0285 9.93255L18.2473 5.76588C17.7889 3.32839 17.5608 2.10859 16.6931 1.38776C15.8254 0.667969 14.5848 0.667969 12.1035 0.667969H7.89519C5.41394 0.667969 4.17331 0.667969 3.3056 1.38776ZM7.78894 4.57526C7.95047 5.03259 8.24984 5.42857 8.64581 5.70866C9.04178 5.98875 9.51486 6.13915 9.99988 6.13915C10.4849 6.13915 10.958 5.98875 11.3539 5.70866C11.7499 5.42857 12.0493 5.03259 12.2108 4.57526C12.2837 4.38515 12.4279 4.23099 12.6127 4.1456C12.7975 4.06022 13.0083 4.05035 13.2003 4.1181C13.3923 4.18585 13.5503 4.32587 13.6406 4.50834C13.7308 4.69082 13.7463 4.90133 13.6837 5.09505C13.4144 5.85686 12.9155 6.51644 12.2558 6.98296C11.596 7.44947 10.8079 7.69998 9.99988 7.69998C9.19186 7.69998 8.40371 7.44947 7.74397 6.98296C7.08423 6.51644 6.58535 5.85686 6.31602 5.09505C6.27986 4.99789 6.2634 4.8945 6.2676 4.79092C6.27181 4.68733 6.29658 4.58561 6.34049 4.4917C6.38439 4.39778 6.44655 4.31354 6.52334 4.24389C6.60013 4.17424 6.69002 4.12057 6.78776 4.08601C6.8855 4.05145 6.98915 4.03668 7.09265 4.04258C7.19616 4.04848 7.29745 4.07492 7.39064 4.12036C7.48382 4.1658 7.56703 4.22933 7.63541 4.30725C7.70379 4.38517 7.75598 4.47696 7.78894 4.57526Z"
+                                            fill="#FF9139" />
+                                    </svg>
+                                    <span class="count">2</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="location">
+                            <a href="javascript:;" tabindex="0" class="btn btn-white location-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="23" viewBox="0 0 18 23"
+                                    fill="none">
+                                    <path
+                                        d="M7.115 20.811C7.721 21.311 8.353 21.768 9 22.214C9.6484 21.7739 10.2773 21.3058 10.885 20.811C11.898 19.9792 12.8513 19.0773 13.738 18.112C15.782 15.877 18 12.637 18 9C18 7.8181 17.7672 6.64778 17.3149 5.55585C16.8626 4.46392 16.1997 3.47177 15.364 2.63604C14.5282 1.80031 13.5361 1.13738 12.4442 0.685084C11.3522 0.232792 10.1819 0 9 0C7.8181 0 6.64778 0.232792 5.55585 0.685084C4.46392 1.13738 3.47177 1.80031 2.63604 2.63604C1.80031 3.47177 1.13738 4.46392 0.685084 5.55585C0.232792 6.64778 -1.76116e-08 7.8181 0 9C0 12.637 2.218 15.876 4.262 18.112C5.14862 19.0777 6.10197 19.9789 7.115 20.811ZM9 12.25C8.13805 12.25 7.3114 11.9076 6.7019 11.2981C6.09241 10.6886 5.75 9.86195 5.75 9C5.75 8.13805 6.09241 7.3114 6.7019 6.7019C7.3114 6.09241 8.13805 5.75 9 5.75C9.86195 5.75 10.6886 6.09241 11.2981 6.7019C11.9076 7.3114 12.25 8.13805 12.25 9C12.25 9.86195 11.9076 10.6886 11.2981 11.2981C10.6886 11.9076 9.86195 12.25 9 12.25Z"
+                                        fill="#FF9139" />
+                                </svg>
+                                <span>Adajan, surat</span>
+                            </a>
+                        </li>
+                        <li class="profile-header">
+                            <a href="javascript:;" tabindex="0" class="btn btn-white sign-in-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5 4C5 2.93913 5.42143 1.92172 6.17157 1.17157C6.92172 0.421427 7.93913 0 9 0C10.0609 0 11.0783 0.421427 11.8284 1.17157C12.5786 1.92172 13 2.93913 13 4C13 5.06087 12.5786 6.07828 11.8284 6.82843C11.0783 7.57857 10.0609 8 9 8C7.93913 8 6.92172 7.57857 6.17157 6.82843C5.42143 6.07828 5 5.06087 5 4ZM5 10C3.67392 10 2.40215 10.5268 1.46447 11.4645C0.526784 12.4021 0 13.6739 0 15C0 15.7956 0.316071 16.5587 0.87868 17.1213C1.44129 17.6839 2.20435 18 3 18H15C15.7956 18 16.5587 17.6839 17.1213 17.1213C17.6839 16.5587 18 15.7956 18 15C18 13.6739 17.4732 12.4021 16.5355 11.4645C15.5979 10.5268 14.3261 10 13 10H5Z"
+                                        fill="#FF9139" />
+                                </svg>
+                                <span>log in</span>
+                            </a>
+                        </li>
+                        <li class="mobile-menu mobile-only">
+                            <button class="mobile-menu-button">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>   
+    <main>
+        <section class="cart-banner-sec">
+            <div class="container">
+                <div class="cart-banner-content"> 
+                    <ul class="cart-stapes d-flex  align-items-center justify-content-center">
+                        <li class="active d-flex align-items-center">
+                            <div class="cart-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.0744 4.691C5.2414 5.383 5.0214 6.553 4.5824 8.894L3.8324 12.894C3.2154 16.186 2.9074 17.832 3.8064 18.916C4.7064 20 6.3804 20 9.7304 20H15.2704C18.6204 20 20.2944 20 21.1944 18.916C22.0944 17.832 21.7844 16.186 21.1684 12.894L20.4184 8.894C19.9784 6.554 19.7594 5.383 18.9264 4.691C18.0934 4 16.9024 4 14.5204 4H10.4804C8.0984 4 6.9074 4 6.0744 4.691ZM10.3784 7.751C10.5335 8.19004 10.8209 8.57018 11.201 8.83907C11.5811 9.10795 12.0353 9.25234 12.5009 9.25234C12.9665 9.25234 13.4207 9.10795 13.8008 8.83907C14.1809 8.57018 14.4683 8.19004 14.6234 7.751C14.6933 7.5685 14.8318 7.4205 15.0092 7.33853C15.1866 7.25656 15.389 7.24708 15.5733 7.31213C15.7576 7.37717 15.9093 7.51159 15.9959 7.68676C16.0826 7.86193 16.0975 8.06402 16.0374 8.25C15.7788 8.98134 15.2999 9.61454 14.6666 10.0624C14.0332 10.5102 13.2766 10.7507 12.5009 10.7507C11.7252 10.7507 10.9686 10.5102 10.3352 10.0624C9.70188 9.61454 9.22295 8.98134 8.9644 8.25C8.92968 8.15672 8.91388 8.05747 8.91792 7.95803C8.92195 7.85859 8.94573 7.76094 8.98788 7.67078C9.03003 7.58062 9.08971 7.49975 9.16342 7.43289C9.23714 7.36602 9.32343 7.3145 9.41727 7.28132C9.5111 7.24814 9.6106 7.23397 9.70996 7.23963C9.80932 7.24529 9.90657 7.27067 9.99602 7.31429C10.0855 7.35792 10.1654 7.41891 10.231 7.49371C10.2967 7.56851 10.3468 7.65664 10.3784 7.751Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <span>Shopping Cart</span>
+                        </li>
+                        <li class="active d-flex align-items-center">
+                            <div class="cart-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="0 0 23 20" fill="none">
+                                    <path d="M13 13H5.5C3.614 13 2.672 13 2.086 12.414C1.5 11.828 1.5 10.886 1.5 9V5C1.5 3.114 1.5 2.172 2.086 1.586C2.672 1 3.614 1 5.5 1H17.5C19.386 1 20.328 1 20.914 1.586C21.5 2.172 21.5 3.114 21.5 5V10C21.5 10.932 21.5 11.398 21.348 11.765C21.2475 12.0078 21.1001 12.2284 20.9143 12.4143C20.7284 12.6001 20.5078 12.7475 20.265 12.848C19.898 13 19.432 13 18.5 13" fill="#FF9139"/>
+                                    <path d="M13 13H5.5C3.614 13 2.672 13 2.086 12.414C1.5 11.828 1.5 10.886 1.5 9V5C1.5 3.114 1.5 2.172 2.086 1.586C2.672 1 3.614 1 5.5 1H17.5C19.386 1 20.328 1 20.914 1.586C21.5 2.172 21.5 3.114 21.5 5V10C21.5 10.932 21.5 11.398 21.348 11.765C21.2475 12.0078 21.1001 12.2284 20.9143 12.4143C20.7284 12.6001 20.5078 12.7475 20.265 12.848C19.898 13 19.432 13 18.5 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.5 7C13.5 7.53043 13.2893 8.03914 12.9142 8.41421C12.5391 8.78929 12.0304 9 11.5 9C10.9696 9 10.4609 8.78929 10.0858 8.41421C9.71071 8.03914 9.5 7.53043 9.5 7C9.5 6.46957 9.71071 5.96086 10.0858 5.58579C10.4609 5.21071 10.9696 5 11.5 5C12.0304 5 12.5391 5.21071 12.9142 5.58579C13.2893 5.96086 13.5 6.46957 13.5 7ZM12.5 15C12.5 14.2044 12.8161 13.4413 13.3787 12.8787C13.9413 12.3161 14.7044 12 15.5 12V10C15.5 9.20435 15.8161 8.44129 16.3787 7.87868C16.9413 7.31607 17.7044 7 18.5 7V12.5C18.5 14.835 18.5 16.002 18.028 16.886C17.6551 17.5837 17.0837 18.1551 16.386 18.528C15.502 19 14.335 19 12 19H11.5C9.636 19 8.704 19 7.97 18.695C7.48455 18.4942 7.0434 18.1997 6.67175 17.8284C6.30011 17.4571 6.00524 17.0163 5.804 16.531C5.5 15.796 5.5 14.864 5.5 13" fill="#FF9139"/>
+                                    <path d="M12.5 15C12.5 14.2044 12.8161 13.4413 13.3787 12.8787C13.9413 12.3161 14.7044 12 15.5 12V10C15.5 9.20435 15.8161 8.44129 16.3787 7.87868C16.9413 7.31607 17.7044 7 18.5 7V12.5C18.5 14.835 18.5 16.002 18.028 16.886C17.6551 17.5837 17.0837 18.1551 16.386 18.528C15.502 19 14.335 19 12 19H11.5C9.636 19 8.704 19 7.97 18.695C7.48455 18.4942 7.0434 18.1997 6.67175 17.8284C6.30011 17.4571 6.00524 17.0163 5.804 16.531C5.5 15.796 5.5 14.864 5.5 13M13.5 7C13.5 7.53043 13.2893 8.03914 12.9142 8.41421C12.5391 8.78929 12.0304 9 11.5 9C10.9696 9 10.4609 8.78929 10.0858 8.41421C9.71071 8.03914 9.5 7.53043 9.5 7C9.5 6.46957 9.71071 5.96086 10.0858 5.58579C10.4609 5.21071 10.9696 5 11.5 5C12.0304 5 12.5391 5.21071 12.9142 5.58579C13.2893 5.96086 13.5 6.46957 13.5 7Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <span>Checkout</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <div class="cart-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                    <g clip-path="url(#clip0_4297_1113)">
+                                    <path d="M0.5 4.5V6H14.75V17.25H10.133C9.7985 15.9607 8.639 15 7.25 15C5.861 15 4.7015 15.9607 4.367 17.25H3.5V13.5H2V18.75H4.367C4.7015 20.0393 5.861 21 7.25 21C8.639 21 9.7985 20.0393 10.133 18.75H16.367C16.7015 20.0393 17.861 21 19.25 21C20.639 21 21.7985 20.0393 22.133 18.75H24.5V12.633L24.4528 12.5153L22.9528 8.01525L22.79 7.5H16.25V4.5H0.5ZM1.25 7.5V9H8V7.5H1.25ZM16.25 9H21.7108L23 12.8438V17.25H22.133C21.7985 15.9607 20.639 15 19.25 15C17.861 15 16.7015 15.9607 16.367 17.25H16.25V9ZM2 10.5V12H6.5V10.5H2ZM7.25 16.5C8.08775 16.5 8.75 17.1622 8.75 18C8.75 18.8378 8.08775 19.5 7.25 19.5C6.41225 19.5 5.75 18.8378 5.75 18C5.75 17.1622 6.41225 16.5 7.25 16.5ZM19.25 16.5C20.0877 16.5 20.75 17.1622 20.75 18C20.75 18.8378 20.0877 19.5 19.25 19.5C18.4123 19.5 17.75 18.8378 17.75 18C17.75 17.1622 18.4123 16.5 19.25 16.5Z" fill="#FF9139"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_4297_1113">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <span>Order Complete</span>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </section>  
+        <section class="checkout-page-sec">
+            <div class="container">
+                <div class="row"> 
+                    <div class="col-xl-8 col-lg-7 col-12">
+                        <h2>Shipping Information</h2>
+                        <div class="shipping-info d-flex align-items-center">
+                            <div class="colors-checkbox delivery-info w-100">
+                                <label class="check-label" for="available1">
+                                    <span class="custom-checkbox">
+                                        <input id="available1" type="checkbox">
+                                        <span class="color"></span>
+                                    </span>
+                                    <div class="color-name">
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                                            <g clip-path="url(#clip0_4327_5004)">
+                                            <path d="M19.5 11H19V7.62187C19 7.225 18.8406 6.84375 18.5594 6.5625L15.4375 3.44062C15.1562 3.15937 14.775 3 14.3781 3H13V1.5C13 0.671875 12.3281 0 11.5 0H3.5C2.67188 0 2 0.671875 2 1.5V3H0.25C0.1125 3 0 3.1125 0 3.25V3.75C0 3.8875 0.1125 4 0.25 4H8.75C8.8875 4 9 4.1125 9 4.25V4.75C9 4.8875 8.8875 5 8.75 5H1.25C1.1125 5 1 5.1125 1 5.25V5.75C1 5.8875 1.1125 6 1.25 6H7.75C7.8875 6 8 6.1125 8 6.25V6.75C8 6.8875 7.8875 7 7.75 7H0.25C0.1125 7 0 7.1125 0 7.25V7.75C0 7.8875 0.1125 8 0.25 8H6.75C6.8875 8 7 8.1125 7 8.25V8.75C7 8.8875 6.8875 9 6.75 9H2V13C2 14.6562 3.34375 16 5 16C6.65625 16 8 14.6562 8 13H12C12 14.6562 13.3438 16 15 16C16.6562 16 18 14.6562 18 13H19.5C19.775 13 20 12.775 20 12.5V11.5C20 11.225 19.775 11 19.5 11ZM5 14.5C4.17188 14.5 3.5 13.8281 3.5 13C3.5 12.1719 4.17188 11.5 5 11.5C5.82812 11.5 6.5 12.1719 6.5 13C6.5 13.8281 5.82812 14.5 5 14.5ZM15 14.5C14.1719 14.5 13.5 13.8281 13.5 13C13.5 12.1719 14.1719 11.5 15 11.5C15.8281 11.5 16.5 12.1719 16.5 13C16.5 13.8281 15.8281 14.5 15 14.5ZM17.5 8H13V4.5H14.3781L17.5 7.62187V8Z" fill="#FF9139"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_4327_5004">
+                                            <rect width="20" height="16" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                        Delivery  
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="colors-checkbox delivery-info w-100">
+                                <label class="check-label" for="available10">
+                                    <span class="custom-checkbox">
+                                        <input id="available10" type="checkbox">
+                                        <span class="color"></span>
+                                    </span>
+                                    <div class="color-name">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M21.993 7.9488C21.9911 7.87663 21.9814 7.80488 21.964 7.7348C21.957 7.7098 21.943 7.6858 21.934 7.6608C21.913 7.6038 21.894 7.5478 21.864 7.4958C21.848 7.4688 21.826 7.4468 21.807 7.4208C21.775 7.3758 21.744 7.3298 21.705 7.2908C21.682 7.2688 21.652 7.2508 21.627 7.2298C21.588 7.1978 21.552 7.1628 21.507 7.1358L21.493 7.1298L21.485 7.1238L12.506 2.1338C12.3577 2.05134 12.1908 2.00799 12.0211 2.00781C11.8514 2.00764 11.6845 2.05065 11.536 2.1328L2.515 7.1228C2.51233 7.12613 2.50867 7.12947 2.504 7.1328L2.494 7.1368C2.459 7.1568 2.433 7.1858 2.4 7.2098C2.364 7.2368 2.326 7.2608 2.294 7.2918C2.264 7.3228 2.241 7.3588 2.215 7.3938C2.189 7.4288 2.158 7.4598 2.136 7.4978C2.11 7.5408 2.096 7.5898 2.077 7.6368C2.063 7.6698 2.045 7.7008 2.036 7.7368C2.01892 7.80557 2.0092 7.87597 2.007 7.9468C2.006 7.9638 2 7.9788 2 7.9968V15.9988C2 16.3618 2.197 16.6968 2.515 16.8728L11.493 21.8598L11.494 21.8608L11.496 21.8618L11.516 21.8728C11.559 21.8968 11.606 21.9098 11.651 21.9268C11.683 21.9398 11.714 21.9568 11.748 21.9658C11.9139 22.0092 12.0881 22.0092 12.254 21.9658C12.287 21.9568 12.318 21.9398 12.351 21.9268C12.396 21.9098 12.443 21.8978 12.486 21.8728L12.506 21.8618L12.508 21.8608L12.509 21.8598L21.487 16.8728C21.803 16.6968 22 16.3618 22 15.9988V7.9968C22 7.9798 21.994 7.9658 21.993 7.9488ZM11.972 11.8708L5.058 8.0038L7.82 6.4758L14.654 10.3808L11.972 11.8708ZM12.02 4.1518L18.941 7.9988L16.697 9.2458L9.867 5.3428L12.02 4.1518ZM13 19.2998L13.002 13.6208L16 11.9428V14.9988L18 13.9988V10.8238L20 9.7048V15.4098L13 19.2998Z" fill="#A7A7A7"/>
+                                        </svg>
+                                        Pick - up  
+                                    </div>
+                                </label>
+                            </div>
+                        </div> 
+                        <div class="reservation-form shipping-form">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="name">Your Name</label>
+                                        <input id="name" name="name" type="text" placeholder=" " class="form-control input-md">
+                                    </div>
+                                </div> 
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="phone">Mobile Number</label>
+                                        <input id="phone" name="phone" type="tel" placeholder=" " class="form-control input-md">
+                                    </div>
+                                </div>   
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Address</label>
+                                        <textarea class="form-control" name="message" placeholder="" rows="1"></textarea>
+                                    </div>
+                                </div> 
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="request">Any special requests for your order?</label>
+                                        <input id="request" name="request" type="text" placeholder="Example : “Deliver without ringing the bell”" class="form-control input-md">
+                                    </div>
+                                </div>  
+                            </div> 
+                        </div>
+                        <div class="payment-methord">
+                            <h3>Payment Method</h3>
+                            <ul class="payment-info d-flex">
+                                <li class="country-name w-100">
+                                    <select class="list" style="display: none;">
+                                        <option data-value="Medium"> INR </option>
+                                        <option data-value="Medium">EUR</option>
+                                    </select>
+                                    <div class="w-100 nice-select list" tabindex="0">
+                                        <span class="current"> Google Pay </span>
+                                        <ul class="list">
+                                            <li data-value="INR" class="option d-flex align-items-center justify-content-between">
+                                                <div class="card-dtl d-flex align-items-center gap-2">
+                                                    <img src="./assets/images/payment3.png" alt="payment-image" loading="lazy">
+                                                    Axim Bank
+                                                </div> 
+                                                <span>**** **** **** 4578</span> 
+                                                <span class="custom-checkbox">
+                                                    <input id="available1" type="checkbox" class="filled">
+                                                    <span class="color"></span>
+                                                </span> 
+                                            </li>
+                                            <li data-value="INR" class="option d-flex align-items-center justify-content-between">
+                                                <div class="card-dtl d-flex align-items-center gap-2">
+                                                    <img src="./assets/images/payment4.png" alt="payment-image" loading="lazy">
+                                                    HDFC Bank
+                                                </div> 
+                                                <span>**** **** **** 4521</span> 
+                                                <span class="custom-checkbox">
+                                                    <input id="available1" type="checkbox" class="filled">
+                                                    <span class="color"></span>
+                                                </span> 
+                                            </li> 
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="languages w-100">
+                                    <select class="list" style="display: none;">
+                                        <option data-value="Medium">English</option>
+                                        <option data-value="Medium">Spanish</option>
+                                    </select>
+                                    <div class="w-100 nice-select list open" tabindex="0">
+                                        <span class="current">English</span>
+                                        <ul class="list">
+                                            <li data-value="INR" class="option d-flex align-items-center justify-content-between">
+                                                <div class="card-dtl d-flex align-items-center gap-2">
+                                                    <img src="./assets/images/payment1.png" alt="payment-image" loading="lazy">
+                                                    Axim Bank
+                                                </div> 
+                                                <span>**** **** **** 4578</span> 
+                                                <span class="custom-checkbox">
+                                                    <input id="available1" type="checkbox" class="filled">
+                                                    <span class="color"></span>
+                                                </span> 
+                                            </li>
+                                            <li data-value="INR" class="option d-flex align-items-center justify-content-between">
+                                                <div class="card-dtl d-flex align-items-center gap-2">
+                                                    <img src="./assets/images/payment2.png" alt="payment-image" loading="lazy">
+                                                    HDFC Bank
+                                                </div> 
+                                                <span>**** **** **** 4521</span> 
+                                                <span class="custom-checkbox">
+                                                    <input id="available1" type="checkbox" class="filled">
+                                                    <span class="color"></span>
+                                                </span> 
+                                            </li>
+                                            <li class="add-payment d-flex align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                                    <circle opacity="0.2" cx="14.0913" cy="14.2944" r="14.0913" fill="#FF9139"/>
+                                                    <path d="M19.8937 14.0861H7.86914M13.8815 8.07422V20.0988" stroke="#FF9139" stroke-width="1.69095" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                Add New Cards
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-12">
+                        <div class="cart-right review-cart">
+                            <div class="cart-notes d-flex align-items-center justify-content-between gap-1"> 
+                                <h6>Review Your Cart</h6>  
+                                <span>QTY</span>
+                            </div>
+                            <div class="cart-card-inner">
+                                <div class="cart-card d-flex align-items-center justify-content-between">
+                                    <div class="cart-card-box d-flex align-items-center">
+                                        <a href="product.html" class="pro-img-cart" tabindex="0">
+                                            <div class="pro-label">Veg</div>
+                                            <img src="./assets/images/product-4.png">
+                                        </a>
+                                        <div class="cart-card-name">
+                                            <h6>
+                                                <a href="product.html">Creamy Mushroom Soup</a>
+                                            </h6>
+                                            <div class="price">
+                                                ₹ 250
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <span>1</span>
+                                </div>
+                                <div class="cart-card d-flex align-items-center justify-content-between">
+                                    <div class="cart-card-box d-flex align-items-center">
+                                        <a href="product.html" class="pro-img-cart" tabindex="0">
+                                            <div class="pro-label">Veg</div>
+                                            <img src="./assets/images/product-9.png">
+                                        </a>
+                                        <div class="cart-card-name">
+                                            <h6>
+                                                <a href="product.html">Creamy Mushroom Soup</a>
+                                            </h6>
+                                            <div class="price">
+                                                ₹ 250
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <span>3</span>
+                                </div>
+                                <div class="cart-card d-flex align-items-center justify-content-between">
+                                    <div class="cart-card-box d-flex align-items-center">
+                                        <a href="product.html" class="pro-img-cart" tabindex="0">
+                                            <div class="pro-label">Veg</div>
+                                            <img src="./assets/images/product-10.png">
+                                        </a>
+                                        <div class="cart-card-name">
+                                            <h6>
+                                                <a href="product.html">Creamy Mushroom Soup</a>
+                                            </h6>
+                                            <div class="price">
+                                                ₹ 250
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <span>4</span>
+                                </div>
+                            </div>
+                            <div class="cart-right-top"> 
+                               
+                                <div class="coupon-code d-flex align-items-center ">
+                                    <input type="text" name="discount" placeholder="Coupon code" class="discount_coupan">
+                                    <div class="apply-coupan-btn">
+                                        <a href="javascript:void;" class="apply" tabindex="0">Coupon Applied </a>
+                                    </div>
+                                </div>
+                                <div class="cart-total">
+                                    <span>Subtotal</span>
+                                    <span class="price">₹ 750.00</span>
+                                </div>
+                                <div class="cart-total">
+                                    <span>Discount</span>
+                                    <span class="price">- ₹ 30.00</span>
+                                </div>
+                                <div class="cart-total">
+                                    <span>Shipping Costs</span>
+                                    <span class="price">₹ 50.00</span>
+                                </div> 
+                                <div class="term-check d-flex align-items-center">
+                                    <span class="custom-checkbox">
+                                        <input id="available1" type="checkbox" class="filled">
+                                        <span class="color"></span>
+                                    </span>
+                                    <p> I agree to the <ins> Terms & Conditions </ins>  and <ins> Privacy Policy. </ins></p> 
+
+                                </div>
+                                <div class="chekout-btn">
+                                    <button class="btn"> Pay Now | ₹ 700.00</button> 
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="newsletter-sec"  style="background-image: url(assets/images/newsletter-bg.png);">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="section-title text-center"> 
+                        <h2>Sign Up For The Daily newsletter</h2>
+                        <p>Stay Updated With Our Food Menu Website</p> 
+                    </div>
+                    <form class="newsletter-form">
+                        <div class="input-wrapper d-flex align-items-center">
+                            <input type="email" placeholder="Enter your email...">
+                            <button type="submit" class=" btn">
+                                <span>Subscribe</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28.6143 11.3858L15.4142 20.5505L1.60749 15.9477C0.643763 15.6258 -0.00550973 14.7216 3.52419e-05 13.7057C0.00565318 12.6899 0.662368 11.7913 1.62982 11.4806L36.9289 0.113033C37.7679 -0.156701 38.6889 0.0646601 39.3122 0.687959C39.9354 1.31126 40.1568 2.23216 39.887 3.07128L28.5195 38.3702C28.2088 39.3377 27.3101 39.9944 26.2943 40C25.2785 40.0056 24.3743 39.3563 24.0524 38.3926L19.4272 24.519L28.6143 11.3858Z" fill="white"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section> 
+        <footer class="site-footer">
+            <img src="assets/images/category-bg.png" alt="category-bg" class="bg-images category-bg-image" loading="lazy">
+            <div class="container">
+                <div class="footer-row d-flex">
+                    <div class="footer-col footer-subscribe-col">
+                        <div class="footer-widget set has-children1">
+                            <div class="footer-logo">
+                                <a href="index.html" tabindex="0">
+                                    <img src="assets/images/logo.png" alt="logo" loading="lazy">
+                                </a>
+                            </div>
+                           <p>Whether dining in or ordering out, booking your next meal is effortless. Savor every bite!</p>
+                           <ul class="social-img d-flex align-items-center">
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank" tabindex="0">
+                                        <img src="./assets/images/social-media-img-1.png" alt="social-img" loading="lazy"> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M17 0.75C18.6576 0.75 20.2473 1.40848 21.4194 2.58058C22.5915 3.75269 23.25 5.3424 23.25 7V17C23.25 18.6576 22.5915 20.2473 21.4194 21.4194C20.2473 22.5915 18.6576 23.25 17 23.25H7C5.3424 23.25 3.75269 22.5915 2.58058 21.4194C1.40848 20.2473 0.75 18.6576 0.75 17V7C0.75 5.3424 1.40848 3.75269 2.58058 2.58058C3.75269 1.40848 5.3424 0.75 7 0.75H17ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM12 9.5C12.663 9.5 13.2989 9.76339 13.7678 10.2322C14.2366 10.7011 14.5 11.337 14.5 12C14.5 12.663 14.2366 13.2989 13.7678 13.7678C13.2989 14.2366 12.663 14.5 12 14.5C11.337 14.5 10.7011 14.2366 10.2322 13.7678C9.76339 13.2989 9.5 12.663 9.5 12C9.5 11.337 9.76339 10.7011 10.2322 10.2322C10.7011 9.76339 11.337 9.5 12 9.5ZM17.625 5.125C17.2935 5.125 16.9755 5.2567 16.7411 5.49112C16.5067 5.72554 16.375 6.04348 16.375 6.375C16.375 6.70652 16.5067 7.02446 16.7411 7.25888C16.9755 7.4933 17.2935 7.625 17.625 7.625C17.9565 7.625 18.2745 7.4933 18.5089 7.25888C18.7433 7.02446 18.875 6.70652 18.875 6.375C18.875 6.04348 18.7433 5.72554 18.5089 5.49112C18.2745 5.2567 17.9565 5.125 17.625 5.125Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank" tabindex="0">
+                                        <img src="./assets/images/social-media-img-2.png" alt="social-img" loading="lazy"> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M17 0.75C18.6576 0.75 20.2473 1.40848 21.4194 2.58058C22.5915 3.75269 23.25 5.3424 23.25 7V17C23.25 18.6576 22.5915 20.2473 21.4194 21.4194C20.2473 22.5915 18.6576 23.25 17 23.25H7C5.3424 23.25 3.75269 22.5915 2.58058 21.4194C1.40848 20.2473 0.75 18.6576 0.75 17V7C0.75 5.3424 1.40848 3.75269 2.58058 2.58058C3.75269 1.40848 5.3424 0.75 7 0.75H17ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM12 9.5C12.663 9.5 13.2989 9.76339 13.7678 10.2322C14.2366 10.7011 14.5 11.337 14.5 12C14.5 12.663 14.2366 13.2989 13.7678 13.7678C13.2989 14.2366 12.663 14.5 12 14.5C11.337 14.5 10.7011 14.2366 10.2322 13.7678C9.76339 13.2989 9.5 12.663 9.5 12C9.5 11.337 9.76339 10.7011 10.2322 10.2322C10.7011 9.76339 11.337 9.5 12 9.5ZM17.625 5.125C17.2935 5.125 16.9755 5.2567 16.7411 5.49112C16.5067 5.72554 16.375 6.04348 16.375 6.375C16.375 6.70652 16.5067 7.02446 16.7411 7.25888C16.9755 7.4933 17.2935 7.625 17.625 7.625C17.9565 7.625 18.2745 7.4933 18.5089 7.25888C18.7433 7.02446 18.875 6.70652 18.875 6.375C18.875 6.04348 18.7433 5.72554 18.5089 5.49112C18.2745 5.2567 17.9565 5.125 17.625 5.125Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank" tabindex="0">
+                                        <img src="./assets/images/social-media-img-3.png" alt="social-img" loading="lazy"> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M17 0.75C18.6576 0.75 20.2473 1.40848 21.4194 2.58058C22.5915 3.75269 23.25 5.3424 23.25 7V17C23.25 18.6576 22.5915 20.2473 21.4194 21.4194C20.2473 22.5915 18.6576 23.25 17 23.25H7C5.3424 23.25 3.75269 22.5915 2.58058 21.4194C1.40848 20.2473 0.75 18.6576 0.75 17V7C0.75 5.3424 1.40848 3.75269 2.58058 2.58058C3.75269 1.40848 5.3424 0.75 7 0.75H17ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM12 9.5C12.663 9.5 13.2989 9.76339 13.7678 10.2322C14.2366 10.7011 14.5 11.337 14.5 12C14.5 12.663 14.2366 13.2989 13.7678 13.7678C13.2989 14.2366 12.663 14.5 12 14.5C11.337 14.5 10.7011 14.2366 10.2322 13.7678C9.76339 13.2989 9.5 12.663 9.5 12C9.5 11.337 9.76339 10.7011 10.2322 10.2322C10.7011 9.76339 11.337 9.5 12 9.5ZM17.625 5.125C17.2935 5.125 16.9755 5.2567 16.7411 5.49112C16.5067 5.72554 16.375 6.04348 16.375 6.375C16.375 6.70652 16.5067 7.02446 16.7411 7.25888C16.9755 7.4933 17.2935 7.625 17.625 7.625C17.9565 7.625 18.2745 7.4933 18.5089 7.25888C18.7433 7.02446 18.875 6.70652 18.875 6.375C18.875 6.04348 18.7433 5.72554 18.5089 5.49112C18.2745 5.2567 17.9565 5.125 17.625 5.125Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank" tabindex="0">
+                                        <img src="./assets/images/social-media-img-4.png" alt="social-img" loading="lazy"> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M17 0.75C18.6576 0.75 20.2473 1.40848 21.4194 2.58058C22.5915 3.75269 23.25 5.3424 23.25 7V17C23.25 18.6576 22.5915 20.2473 21.4194 21.4194C20.2473 22.5915 18.6576 23.25 17 23.25H7C5.3424 23.25 3.75269 22.5915 2.58058 21.4194C1.40848 20.2473 0.75 18.6576 0.75 17V7C0.75 5.3424 1.40848 3.75269 2.58058 2.58058C3.75269 1.40848 5.3424 0.75 7 0.75H17ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM12 9.5C12.663 9.5 13.2989 9.76339 13.7678 10.2322C14.2366 10.7011 14.5 11.337 14.5 12C14.5 12.663 14.2366 13.2989 13.7678 13.7678C13.2989 14.2366 12.663 14.5 12 14.5C11.337 14.5 10.7011 14.2366 10.2322 13.7678C9.76339 13.2989 9.5 12.663 9.5 12C9.5 11.337 9.76339 10.7011 10.2322 10.2322C10.7011 9.76339 11.337 9.5 12 9.5ZM17.625 5.125C17.2935 5.125 16.9755 5.2567 16.7411 5.49112C16.5067 5.72554 16.375 6.04348 16.375 6.375C16.375 6.70652 16.5067 7.02446 16.7411 7.25888C16.9755 7.4933 17.2935 7.625 17.625 7.625C17.9565 7.625 18.2745 7.4933 18.5089 7.25888C18.7433 7.02446 18.875 6.70652 18.875 6.375C18.875 6.04348 18.7433 5.72554 18.5089 5.49112C18.2745 5.2567 17.9565 5.125 17.625 5.125Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                           </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-widget set has-children1">
+                            <h2 class="footer-acnav"> <span> Quick Links </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 10 5" width="10" height="5">
+                                    <path class="a" d="m5.4 5.1q-0.3 0-0.5-0.2l-3.7-3.7c-0.3-0.3-0.3-0.7 0-1 0.2-0.3 0.7-0.3 0.9 0l3.3 3.2 3.2-3.2c0.2-0.3 0.7-0.3 0.9 0 0.3 0.3 0.3 0.7 0 1l-3.7 3.7q-0.2 0.2-0.4 0.2z"></path>
+                                </svg>
+                            </h2>
+                            <ul class="footer-acnav-list">
+                                <li><a href="index.html" tabindex="0">Home</a></li>
+                                <li><a href="about-us.html" tabindex="0">About Us</a></li> 
+                                <li><a href="blog.html" tabindex="0">our Blog</a></li>
+                                <li><a href="book-table.html" tabindex="0">Book a table</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-widget set has-children1">
+                            <h2 class="footer-acnav"> <span> Other Links </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 10 5" width="10" height="5">
+                                    <path class="a" d="m5.4 5.1q-0.3 0-0.5-0.2l-3.7-3.7c-0.3-0.3-0.3-0.7 0-1 0.2-0.3 0.7-0.3 0.9 0l3.3 3.2 3.2-3.2c0.2-0.3 0.7-0.3 0.9 0 0.3 0.3 0.3 0.7 0 1l-3.7 3.7q-0.2 0.2-0.4 0.2z"></path>
+                                </svg>
+                            </h2>
+                            <ul class="footer-acnav-list">
+                                <li><a href="javascript:" tabindex="0">Terms & Condition</a></li>
+                                <li><a href="javascript:void;" tabindex="0">Privacy Policy</a></li> 
+                                <li><a href="javascript:void;" tabindex="0">Refund Policy</a></li>
+                                <li><a href="contact-us.html" tabindex="0">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-widget set has-children1">
+                            <h2 class="footer-acnav">
+                                <span>reach us</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 10 5" width="10" height="5">
+                                    <path class="a" d="m5.4 5.1q-0.3 0-0.5-0.2l-3.7-3.7c-0.3-0.3-0.3-0.7 0-1 0.2-0.3 0.7-0.3 0.9 0l3.3 3.2 3.2-3.2c0.2-0.3 0.7-0.3 0.9 0 0.3 0.3 0.3 0.7 0 1l-3.7 3.7q-0.2 0.2-0.4 0.2z"></path>
+                                </svg>
+                            </h2>
+                            <ul class="footer-acnav-list social-icons">
+                                <li>  
+                                    <a href="tel:+12 (345)567 890" class="d-flex align-items-center">
+                                        <div class="social-icon-svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                <path d="M12.0193 14.9999C11.3656 14.9999 10.4473 14.7635 9.07223 13.9954C7.40012 13.0579 6.10678 12.1924 4.44371 10.534C2.84026 8.93183 2.05997 7.89454 0.967892 5.90768C-0.265842 3.66435 -0.0555315 2.48845 0.179561 1.98587C0.459529 1.3852 0.872783 1.02593 1.40693 0.66934C1.71033 0.4706 2.03139 0.300235 2.36606 0.160406C2.39955 0.146008 2.43069 0.13228 2.45849 0.119892C2.62426 0.0452256 2.87542 -0.0676106 3.19357 0.0529266C3.40589 0.132615 3.59544 0.295675 3.89215 0.588647C4.50065 1.18865 5.33218 2.52494 5.63894 3.1812C5.84489 3.62351 5.98119 3.91547 5.98153 4.24293C5.98153 4.62631 5.78863 4.92196 5.55454 5.24105C5.51067 5.30098 5.46714 5.35824 5.42494 5.41382C5.17009 5.74864 5.11416 5.84541 5.151 6.01818C5.22568 6.36539 5.7826 7.399 6.69786 8.31207C7.61311 9.22513 8.61711 9.74679 8.96573 9.82112C9.1459 9.85963 9.2447 9.80137 9.5903 9.53753C9.63987 9.49969 9.69077 9.46052 9.74402 9.42134C10.101 9.15583 10.383 8.96799 10.7574 8.96799H10.7594C11.0853 8.96799 11.3642 9.10929 11.8264 9.34232C12.4292 9.64635 13.8059 10.467 14.4097 11.076C14.7034 11.372 14.8672 11.5609 14.9472 11.7728C15.0678 12.0919 14.9542 12.342 14.8802 12.5094C14.8678 12.5372 14.8541 12.5677 14.8397 12.6015C14.6987 12.9355 14.5273 13.2558 14.3277 13.5584C13.9717 14.0908 13.611 14.503 13.0089 14.7832C12.6997 14.9295 12.3613 15.0036 12.0193 14.9999Z" fill="white"/>
+                                            </svg>
+                                        </div> 
+                                        +12 (345)567 890
+                                    </a>
+                                </li>
+                                <li class="e-mail">  
+                                    <a href="mailto:info@gmail.com" class="d-flex align-items-center">
+                                        <div class="social-icon-svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13" fill="none">
+                                                <path d="M1.64315 13C1.21539 13 0.858507 12.857 0.572507 12.571C0.286507 12.285 0.143197 11.9278 0.142578 11.4994V1.50057C0.142578 1.07281 0.285888 0.715928 0.572507 0.429928C0.859126 0.143928 1.2157 0.000619047 1.64222 0H15.3572C15.7844 0 16.1409 0.143309 16.4269 0.429928C16.7129 0.716547 16.8562 1.07343 16.8569 1.50057V11.5004C16.8569 11.9275 16.7136 12.2844 16.4269 12.571C16.1403 12.8576 15.7837 13.0006 15.3572 13H1.64315ZM8.49972 6.46286C8.5771 6.46286 8.64953 6.45109 8.71701 6.42757C8.78386 6.40405 8.8501 6.37526 8.91572 6.34121L15.6284 1.94629C15.7163 1.89305 15.7735 1.82031 15.8001 1.72807C15.8268 1.63583 15.8218 1.5439 15.7853 1.45229C15.7618 1.33281 15.6838 1.24614 15.5513 1.19229C15.4194 1.13905 15.2916 1.14988 15.1678 1.22479L8.49972 5.57143L1.83258 1.22571C1.70877 1.15019 1.58372 1.1341 1.45744 1.17743C1.33115 1.22076 1.25005 1.30619 1.21415 1.43371C1.17824 1.52905 1.1736 1.62593 1.20022 1.72436C1.22684 1.82279 1.28379 1.89707 1.37108 1.94721L8.08372 6.34121C8.14934 6.37526 8.21558 6.40405 8.28243 6.42757C8.34991 6.45048 8.42234 6.46193 8.49972 6.46193" fill="white"/>
+                                            </svg>
+                                        </div> 
+                                        info@gmail.com
+                                    </a>
+                                </li>
+                                <li>  
+                                    <a href="javascript:void;" class="d-flex align-items-center">
+                                        <div class="social-icon-svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 13 15" fill="none">
+                                                <path d="M10.9649 1.81956C8.49857 -0.606521 4.49983 -0.606521 2.03349 1.81956C1.44791 2.39165 0.982609 3.07503 0.664927 3.82952C0.347245 4.58401 0.183594 5.3944 0.183594 6.21304C0.183594 7.03169 0.347245 7.84207 0.664927 8.59657C0.982609 9.35106 1.44791 10.0344 2.03349 10.6065L6.49881 15L10.9649 10.6065C11.5505 10.0344 12.0158 9.35106 12.3335 8.59657C12.6512 7.84207 12.8148 7.03169 12.8148 6.21304C12.8148 5.3944 12.6512 4.58401 12.3335 3.82952C12.0158 3.07503 11.5505 2.39165 10.9649 1.81956ZM6.49881 8.28939C5.97143 8.28939 5.47643 8.08412 5.103 7.71148C4.73332 7.34102 4.52571 6.83903 4.52571 6.31568C4.52571 5.79232 4.73332 5.29033 5.103 4.91987C5.47564 4.54723 5.97143 4.34196 6.49881 4.34196C7.02618 4.34196 7.52198 4.54723 7.89462 4.91987C8.26429 5.29033 8.47191 5.79232 8.47191 6.31568C8.47191 6.83903 8.26429 7.34102 7.89462 7.71148C7.52198 8.08412 7.02618 8.28939 6.49881 8.28939Z" fill="white"/>
+                                            </svg>
+                                        </div> 
+                                        12,Address here, surat.
+                                    </a>
+                                </li> 
+                                <li>  
+                                    <a href="javascript:void;" class="d-flex align-items-center">
+                                        <div class="social-icon-svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 7.504V3.2H7.4V8L10.7944 11.3944L11.6424 10.5464L8.6 7.504ZM8 16C3.5816 16 0 12.4184 0 8C0 3.5816 3.5816 0 8 0C12.4184 0 16 3.5816 16 8C16 12.4184 12.4184 16 8 16Z" fill="white"/>
+                                            </svg>
+                                        </div> 
+                                        8 : 30 AM  to  9 : 30 PM
+                                    </a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+                <div class="footer-bottom"> 
+                    <div class="footer-bottom-inner text-center">
+                        <p>© Copyright 2025, All Rights Reserved by <a href="https://artbeessolution.com/" target="_blank" title="workdo">Artbeessolution</a>
+                        </p> 
+                    </div> 
+                </div>
+            </div> 
+        </footer>
+    </main>
+
+     <!-- sign-in-popup start here -->
+    <div class="sign-in-popup">
+        <div class="sign-in-inner d-flex justify-content-between" style="background-image: url(assets/images/popup-bg.png);">
+            <button class="close-sub-btn common-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                    <path fill="#ffffff" d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                    </path>
+                </svg>
+            </button> 
+            <div class="sign-in-left-inner">
+                <h2> <em>  “ Tasty Treats at Your Fingertips! ” </em></h2>
+            </div>
+            <div class="sign-in-right-inner">
+                <div class="user-details d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                        <rect width="46" height="46" rx="15" fill="#FFEBD9"/>
+                        <path d="M22.9993 21.0846C25.1164 21.0846 26.8327 19.3684 26.8327 17.2513C26.8327 15.1342 25.1164 13.418 22.9993 13.418C20.8823 13.418 19.166 15.1342 19.166 17.2513C19.166 19.3684 20.8823 21.0846 22.9993 21.0846Z" fill="#FF9139"/>
+                        <path d="M30.6673 28.2695C30.6673 30.651 30.6673 32.582 23.0007 32.582C15.334 32.582 15.334 30.651 15.334 28.2695C15.334 25.8881 18.7667 23.957 23.0007 23.957C27.2346 23.957 30.6673 25.8881 30.6673 28.2695Z" fill="#FF9139"/>
+                    </svg>
+                    <h3>sign in</h3>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="sigin-name">Your Name</label>
+                    <input id="sigin-name" name="sigin-name" type="text" placeholder="John Doe" class="form-control input-md">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="sigin-phone">Mobile Number</label>
+                    <input id="sigin-phone" name="sigin-phone" type="tel" placeholder="+12 555-123-4567" class="form-control input-md">
+                </div>
+                <button type="submit" class="btn w-100 submit-btn">
+                    <span>Sign In</span>
+                </button>
+                <p>Don’t have an account? <a href="javascript:void;" tabindex="0" class="sign-out-btn">Sign Up</a> </p>
+            </div> 
+        </div>
+    </div>  
+
+    <!-- sign-out-popup start here -->
+    <div class="sign-out-popup">
+        <div class="sign-in-inner d-flex justify-content-between" style="background-image: url(assets/images/popup-bg.png);">
+            <button class="close-sub-btn common-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                    <path fill="#ffffff" d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                    </path>
+                </svg>
+            </button> 
+            <div class="sign-in-left-inner">
+                <h2> <em>  “ Tasty Treats at Your Fingertips! ” </em></h2>
+            </div>
+            <div class="sign-in-right-inner">
+                <div class="user-details d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                        <rect width="46" height="46" rx="15" fill="#FFEBD9"/>
+                        <path d="M22.9993 21.0846C25.1164 21.0846 26.8327 19.3684 26.8327 17.2513C26.8327 15.1342 25.1164 13.418 22.9993 13.418C20.8823 13.418 19.166 15.1342 19.166 17.2513C19.166 19.3684 20.8823 21.0846 22.9993 21.0846Z" fill="#FF9139"/>
+                        <path d="M30.6673 28.2695C30.6673 30.651 30.6673 32.582 23.0007 32.582C15.334 32.582 15.334 30.651 15.334 28.2695C15.334 25.8881 18.7667 23.957 23.0007 23.957C27.2346 23.957 30.6673 25.8881 30.6673 28.2695Z" fill="#FF9139"/>
+                    </svg>
+                    <h3>sign up</h3>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="signup-first-name">First Name</label>
+                    <input id="signup-first-name" name="signup-first-name" type="text" placeholder="John" class="form-control input-md">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="signup-last-name">Last Name</label>
+                    <input id="signup-last-name" name="signup-last-name" type="text" placeholder="Doe" class="form-control input-md">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="signup-phone">Mobile Number</label>
+                    <input id="signup-phone" name="signup-phone" type="tel" placeholder="+12 555-123-4567" class="form-control input-md">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="sign-up-email">Email Address</label>
+                    <input id="sign-up-email" name="sign-up-email" type="text" placeholder="johndoe@gmail.com" class="form-control input-md filled">
+                </div>
+                <button type="submit" class="btn w-100 submit-btn">
+                    <span>Sign up</span>
+                </button>
+                <p>Already have an account?<a href="javascript:void;" tabindex="0" class="sign-in-btn">Sign in</a> </p>
+            </div> 
+        </div>
+    </div> 
+
+    <!-- location-popup start here -->
+    <div class="location-popup">
+        <div class="location-inner d-flex justify-content-between">
+            <button class="close-sub-btn common-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                    <path fill="#ffffff" d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                    </path>
+                </svg>
+            </button>
+            <h2>Hungry? Let’s locate the bestspan <span> restaurants nearby! </span> </h2> 
+            <p>Find the perfect restaurant near you in just one click. Select your location to start ordering or booking a table!</p> 
+            <div class="address-select d-flex align-items-center">
+                <a href="javascript:;" tabindex="0" class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="23" viewBox="0 0 18 23" fill="none">
+                        <path d="M7.115 20.811C7.721 21.311 8.353 21.768 9 22.214C9.6484 21.7739 10.2773 21.3058 10.885 20.811C11.898 19.9792 12.8513 19.0773 13.738 18.112C15.782 15.877 18 12.637 18 9C18 7.8181 17.7672 6.64778 17.3149 5.55585C16.8626 4.46392 16.1997 3.47177 15.364 2.63604C14.5282 1.80031 13.5361 1.13738 12.4442 0.685084C11.3522 0.232792 10.1819 0 9 0C7.8181 0 6.64778 0.232792 5.55585 0.685084C4.46392 1.13738 3.47177 1.80031 2.63604 2.63604C1.80031 3.47177 1.13738 4.46392 0.685084 5.55585C0.232792 6.64778 -1.76116e-08 7.8181 0 9C0 12.637 2.218 15.876 4.262 18.112C5.14862 19.0777 6.10197 19.9789 7.115 20.811ZM9 12.25C8.13805 12.25 7.3114 11.9076 6.7019 11.2981C6.09241 10.6886 5.75 9.86195 5.75 9C5.75 8.13805 6.09241 7.3114 6.7019 6.7019C7.3114 6.09241 8.13805 5.75 9 5.75C9.86195 5.75 10.6886 6.09241 11.2981 6.7019C11.9076 7.3114 12.25 8.13805 12.25 9C12.25 9.86195 11.9076 10.6886 11.2981 11.2981C10.6886 11.9076 9.86195 12.25 9 12.25Z" fill="#FF9139"></path>
+                    </svg>
+                    <span>Use My Current Location</span> 
+                </a>
+                <span>OR</span>
+                <div class="select-location d-flex align-items-center">
+                    <li class="city-name">
+                        <select class="list">
+                            <option data-value="Medium"> Select City </option>
+                            <option data-value="Medium">Surat</option>
+                            <option data-value="Medium">japan</option>
+                            <option data-value="Medium">canada</option>
+                        </select>
+                    </li>
+                    <li class="city-outlet">
+                        <select class="list">
+                            <option data-value="Medium">Select Outlet</option>
+                            <option data-value="Medium" >Outletng 1</option>
+                            <option data-value="Medium" >Outletng 2</option>
+                        </select>
+                    </li>
+                </div> 
+            </div>
+        </div>
+    </div> 
+
+    <!-- otp-popup start here -->
+    <div class="otp-popup">
+        <div class="sign-in-inner d-flex justify-content-between" style="background-image: url(assets/images/popup-bg.png);">
+            <button class="close-sub-btn common-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                    <path fill="#ffffff" d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                    </path>
+                </svg>
+            </button> 
+            <div class="sign-in-left-inner">
+                <h2> <em>  “ Tasty Treats at Your Fingertips! ” </em></h2>
+            </div>
+            <div class="sign-in-right-inner">
+                <div class="user-details d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                        <rect width="46" height="46" rx="15" fill="#FFEBD9"/>
+                        <path d="M22.9993 21.0846C25.1164 21.0846 26.8327 19.3684 26.8327 17.2513C26.8327 15.1342 25.1164 13.418 22.9993 13.418C20.8823 13.418 19.166 15.1342 19.166 17.2513C19.166 19.3684 20.8823 21.0846 22.9993 21.0846Z" fill="#FF9139"/>
+                        <path d="M30.6673 28.2695C30.6673 30.651 30.6673 32.582 23.0007 32.582C15.334 32.582 15.334 30.651 15.334 28.2695C15.334 25.8881 18.7667 23.957 23.0007 23.957C27.2346 23.957 30.6673 25.8881 30.6673 28.2695Z" fill="#FF9139"/>
+                    </svg>
+                    <h3>OTP VERIFICATION</h3>
+                </div> 
+                <p class="text-start">Enter the 4-digit OTP sent to your registered mobile number.</p>
+                <div class="otp-inputs">
+                    <input type="text" maxlength="1" placeholder="-">
+                    <input type="text" maxlength="1" placeholder="-">
+                    <input type="text" maxlength="1" placeholder="-">
+                    <input type="text" maxlength="1" placeholder="-">
+                </div>
+                <button type="submit" class="btn w-100">
+                    <span>Verify</span>
+                </button>
+                <p>Didn’t receive the OTP? <a href="javascript:void;" tabindex="0"> Resend OTP</a> </p>
+            </div> 
+        </div>
+    </div>
+
+    <!-- quick-view-popup start here -->
+    <div class="quick-view-popup">
+        <div class="quick-view-heading d-flex align-items-center justify-content-between">
+            <h3>
+                <a href="product.html" tabindex="0">Portable BBQ Oven</a>
+            </h3>
+            <button class="common-close quick-close-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                    <path fill="#ffffff"
+                        d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div class="quick-view-inner">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div class="quick-view-left">
+                        <div class="quickview-image-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="quickview-card">
+                                        <div class="quickview-card-inner">
+                                            <div class="quickview-card-image img-ratio">
+                                                <img src="./assets/images/product-1.png" alt="popular-product"
+                                                    loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="quickview-card">
+                                        <div class="quickview-card-inner">
+                                            <div class="quickview-card-image img-ratio">
+                                                <img src="./assets/images/product-2.png" alt="popular-product"
+                                                    loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrow-wrapper">
+                                <div class="quickview-arrow swiper-button-prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="17" viewBox="0 0 9 17"
+                                        fill="none">
+                                        <path d="M9 0.333336L9 17L0.666665 8.66667L9 0.333336Z" fill="white"></path>
+                                    </svg>
+                                </div>
+                                <div class="quickview-arrow swiper-button-next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="17" viewBox="0 0 9 17"
+                                        fill="none">
+                                        <path d="M9 0.333336L9 17L0.666665 8.66667L9 0.333336Z" fill="white"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="quick-view-right">
+                        <div class="section-title">
+                            <div class="subtitle">Description :</div>
+                            <p>A rich, velvety soup made with fresh mushrooms, garden vegetables, and a touch of
+                                aromatic herbs. Slow-cooked for deep flavors, it’s the perfect warm and comforting start
+                                to any meal! 🍄</p>
+                        </div>
+                        <div class="pro-itm-inner">
+                            <h6>Extra Ingredients (Optional):</h6>
+                            <div class="colors-checkbox">
+                                <label class="check-label" for="available1">
+                                    <span class="custom-checkbox">
+                                        <input id="available1" type="checkbox">
+                                        <span class="color"></span>
+                                    </span>
+                                    <div class="color-name">
+                                        Extra Paneer
+                                        <span class="color-count">₹ 30</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="colors-checkbox">
+                                <label class="check-label" for="available2">
+                                    <span class="custom-checkbox">
+                                        <input id="available2" type="checkbox">
+                                        <span class="color"></span>
+                                    </span>
+                                    <div class="color-name">
+                                        Extra Cheese
+                                        <span class="color-count">₹ 60</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="colors-checkbox">
+                                <label class="check-label" for="color3">
+                                    <span class="custom-checkbox">
+                                        <input id="color3" type="checkbox">
+                                        <span class="color"></span>
+                                    </span>
+                                    <div class="color-name">
+                                        Garlic Croutons
+                                        <span class="color-count">₹ 30</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="colors-checkbox">
+                                <label class="check-label" for="color4">
+                                    <span class="custom-checkbox">
+                                        <input id="color4" type="checkbox">
+                                        <span class="color"></span>
+                                    </span>
+                                    <div class="color-name">
+                                        Fresh Herbs
+                                        <span class="color-count">₹ 40</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="colors-checkbox">
+                                <label class="check-labe2" for="color6">
+                                    <span class="custom-checkbox">
+                                        <input id="color6" type="checkbox">
+                                        <span class="color"></span>
+                                    </span>
+                                    <div class="color-name">
+                                        Extra Mushrooms
+                                        <span class="color-count">₹ 20</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="quick-view-cart d-flex align-items-center">
+                            <div class="pro-btn-wrapper">
+                                <div class="pro-btn">
+                                    <a href="javascript:;" tabindex="0" class="qv-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20"
+                                            viewBox="0 0 23 20" fill="none">
+                                            <path
+                                                d="M7 1C3.9625 1 1.5 3.4625 1.5 6.5C1.5 12 8 17 11.5 18.163C15 17 21.5 12 21.5 6.5C21.5 3.4625 19.0375 1 16 1C14.14 1 12.495 1.9235 11.5 3.337C10.9928 2.61469 10.319 2.0252 9.53568 1.61841C8.75238 1.21162 7.88263 0.999502 7 1Z"
+                                                stroke="#707070" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="product.html" class="btn" tabindex="0">
+                                <span>add to cart</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mobile-menu start here -->
+    <div class="mobile-menu-wrapper">
+        <div class="menu-close-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                <path fill="#24272a"
+                    d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                </path>
+            </svg>
+        </div>
+        <div class="mobile-menu-bar">
+            <ul>
+                <li class="mobile-item">
+                    <a href="index.html">home</a>
+                </li>
+                <li class="mobile-item has-children">
+                    <a href="javascript:void;" tabindex="0" class="acnav-label">
+                        Our Menu
+                        <svg class="menu-open-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="11"
+                            viewBox="0 0 20 11">
+                            <path fill="#24272a"
+                                d="M.268 1.076C.373.918.478.813.584.76l.21.474c.79.684 2.527 2.158 5.21 4.368 2.738 2.21 4.159 3.316 4.264 3.316.474-.053 1.158-.369 1.947-1.053.842-.631 1.632-1.42 2.474-2.368.895-.948 1.737-1.842 2.632-2.58.842-.789 1.578-1.262 2.105-1.42l.316.684c0 .21-.106.474-.316.737-.053.21-.263.421-.474.579-.053.052-.316.21-.737.474l-.526.368c-.421.263-1.105.947-2.158 2l-1.105 1.053-2.053 1.947c-1 .947-1.579 1.421-1.842 1.421-.263 0-.684-.263-1.158-.895-.526-.631-.842-1-1.052-1.105l-.737-.579c-.316-.316-.527-.474-.632-.474l-5.42-4.315L.267 2.339l-.105-.421-.053-.369c0-.157.053-.315.158-.473z">
+                            </path>
+                        </svg>
+                        <svg class="close-menu-ioc" xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                            viewBox="0 0 20 18">
+                            <path fill="#24272a"
+                                d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                            </path>
+                        </svg>
+                    </a>
+                    <ul class="mobile-menu-inner acnav-list">
+                        <li class="menu-h-link menu-h-drop has-children">
+                            <a href="javascript:void;" class="acnav-label" tabindex="0">
+                                <span>Chinese</span>
+                                <svg class="menu-open-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="11"
+                                    viewBox="0 0 20 11">
+                                    <path fill="#24272a"
+                                        d="M.268 1.076C.373.918.478.813.584.76l.21.474c.79.684 2.527 2.158 5.21 4.368 2.738 2.21 4.159 3.316 4.264 3.316.474-.053 1.158-.369 1.947-1.053.842-.631 1.632-1.42 2.474-2.368.895-.948 1.737-1.842 2.632-2.58.842-.789 1.578-1.262 2.105-1.42l.316.684c0 .21-.106.474-.316.737-.053.21-.263.421-.474.579-.053.052-.316.21-.737.474l-.526.368c-.421.263-1.105.947-2.158 2l-1.105 1.053-2.053 1.947c-1 .947-1.579 1.421-1.842 1.421-.263 0-.684-.263-1.158-.895-.526-.631-.842-1-1.052-1.105l-.737-.579c-.316-.316-.527-.474-.632-.474l-5.42-4.315L.267 2.339l-.105-.421-.053-.369c0-.157.053-.315.158-.473z">
+                                    </path>
+                                </svg>
+                                <svg class="close-menu-ioc" xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                                    viewBox="0 0 20 18">
+                                    <path fill="#24272a"
+                                        d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <ul class="acnav-list" style="display: none;">
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Hakka Noodles</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Manchurian (Veg/Chicken)</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Schezwan Fried Rice</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Hot & Sour Soup </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Chilli Paneer</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-h-link menu-h-drop has-children">
+                            <a href="javascript:void;" class="acnav-label" tabindex="0">
+                                <span>Italian</span>
+                                <svg class="menu-open-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="11"
+                                    viewBox="0 0 20 11">
+                                    <path fill="#24272a"
+                                        d="M.268 1.076C.373.918.478.813.584.76l.21.474c.79.684 2.527 2.158 5.21 4.368 2.738 2.21 4.159 3.316 4.264 3.316.474-.053 1.158-.369 1.947-1.053.842-.631 1.632-1.42 2.474-2.368.895-.948 1.737-1.842 2.632-2.58.842-.789 1.578-1.262 2.105-1.42l.316.684c0 .21-.106.474-.316.737-.053.21-.263.421-.474.579-.053.052-.316.21-.737.474l-.526.368c-.421.263-1.105.947-2.158 2l-1.105 1.053-2.053 1.947c-1 .947-1.579 1.421-1.842 1.421-.263 0-.684-.263-1.158-.895-.526-.631-.842-1-1.052-1.105l-.737-.579c-.316-.316-.527-.474-.632-.474l-5.42-4.315L.267 2.339l-.105-.421-.053-.369c0-.157.053-.315.158-.473z">
+                                    </path>
+                                </svg>
+                                <svg class="close-menu-ioc" xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                                    viewBox="0 0 20 18">
+                                    <path fill="#24272a"
+                                        d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <ul class="acnav-list" style="display: none;">
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Margherita Pizza</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0"> Alfredo Pasta</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Lasagna</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Garlic Bread with Cheese </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Bruschetta</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-h-link menu-h-drop has-children">
+                            <a href="javascript:void;" class="acnav-label" tabindex="0">
+                                <span>Indian</span>
+                                <svg class="menu-open-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="11"
+                                    viewBox="0 0 20 11">
+                                    <path fill="#24272a"
+                                        d="M.268 1.076C.373.918.478.813.584.76l.21.474c.79.684 2.527 2.158 5.21 4.368 2.738 2.21 4.159 3.316 4.264 3.316.474-.053 1.158-.369 1.947-1.053.842-.631 1.632-1.42 2.474-2.368.895-.948 1.737-1.842 2.632-2.58.842-.789 1.578-1.262 2.105-1.42l.316.684c0 .21-.106.474-.316.737-.053.21-.263.421-.474.579-.053.052-.316.21-.737.474l-.526.368c-.421.263-1.105.947-2.158 2l-1.105 1.053-2.053 1.947c-1 .947-1.579 1.421-1.842 1.421-.263 0-.684-.263-1.158-.895-.526-.631-.842-1-1.052-1.105l-.737-.579c-.316-.316-.527-.474-.632-.474l-5.42-4.315L.267 2.339l-.105-.421-.053-.369c0-.157.053-.315.158-.473z">
+                                    </path>
+                                </svg>
+                                <svg class="close-menu-ioc" xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                                    viewBox="0 0 20 18">
+                                    <path fill="#24272a"
+                                        d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <ul class="acnav-list" style="display: none;">
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Paneer Butter Masala</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0"> Dal Tadka</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Biryani (Veg/Chicken)</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Chole Bhature </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Masala Dosa</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Butter Naan</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-h-link menu-h-drop has-children">
+                            <a href="javascript:void;" class="acnav-label" tabindex="0">
+                                <span>Soup</span>
+                                <svg class="menu-open-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="11"
+                                    viewBox="0 0 20 11">
+                                    <path fill="#24272a"
+                                        d="M.268 1.076C.373.918.478.813.584.76l.21.474c.79.684 2.527 2.158 5.21 4.368 2.738 2.21 4.159 3.316 4.264 3.316.474-.053 1.158-.369 1.947-1.053.842-.631 1.632-1.42 2.474-2.368.895-.948 1.737-1.842 2.632-2.58.842-.789 1.578-1.262 2.105-1.42l.316.684c0 .21-.106.474-.316.737-.053.21-.263.421-.474.579-.053.052-.316.21-.737.474l-.526.368c-.421.263-1.105.947-2.158 2l-1.105 1.053-2.053 1.947c-1 .947-1.579 1.421-1.842 1.421-.263 0-.684-.263-1.158-.895-.526-.631-.842-1-1.052-1.105l-.737-.579c-.316-.316-.527-.474-.632-.474l-5.42-4.315L.267 2.339l-.105-.421-.053-.369c0-.157.053-.315.158-.473z">
+                                    </path>
+                                </svg>
+                                <svg class="close-menu-ioc" xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                                    viewBox="0 0 20 18">
+                                    <path fill="#24272a"
+                                        d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <ul class="acnav-list" style="display: none;">
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Tomato Soup</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0"> Sweet Corn Soup </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Manchow Soup</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">creamy mushroom</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Lemon Coriander</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0"> mix vegetables</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-h-link menu-h-drop has-children">
+                            <a href="javascript:void;" class="acnav-label" tabindex="0">
+                                <span>Fast-Food</span>
+                                <svg class="menu-open-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="11"
+                                    viewBox="0 0 20 11">
+                                    <path fill="#24272a"
+                                        d="M.268 1.076C.373.918.478.813.584.76l.21.474c.79.684 2.527 2.158 5.21 4.368 2.738 2.21 4.159 3.316 4.264 3.316.474-.053 1.158-.369 1.947-1.053.842-.631 1.632-1.42 2.474-2.368.895-.948 1.737-1.842 2.632-2.58.842-.789 1.578-1.262 2.105-1.42l.316.684c0 .21-.106.474-.316.737-.053.21-.263.421-.474.579-.053.052-.316.21-.737.474l-.526.368c-.421.263-1.105.947-2.158 2l-1.105 1.053-2.053 1.947c-1 .947-1.579 1.421-1.842 1.421-.263 0-.684-.263-1.158-.895-.526-.631-.842-1-1.052-1.105l-.737-.579c-.316-.316-.527-.474-.632-.474l-5.42-4.315L.267 2.339l-.105-.421-.053-.369c0-.157.053-.315.158-.473z">
+                                    </path>
+                                </svg>
+                                <svg class="close-menu-ioc" xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                                    viewBox="0 0 20 18">
+                                    <path fill="#24272a"
+                                        d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <ul class="acnav-list" style="display: none;">
+                                <li>
+                                    <a href="javascript:;" tabindex="0">pizza</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0"> Veg/Chicken Burger </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">sandwich</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Hot Dog</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">Noodles</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" tabindex="0">dumplings-momos</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-item">
+                    <a href="about-us.html">About Us</a>
+                </li>
+                <li class="mobile-item">
+                    <a href="contact-us.html">Contact Us</a>
+                </li>
+                <li class="mobile-item">
+                    <a href="book-table.html">Book A Table</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- progress-wrap -->
+    <div class="progress-wrap active-progress">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 212.701;">
+            </path>
+        </svg>
+    </div> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
